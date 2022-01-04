@@ -1,0 +1,31 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Yuuya Watabe", email = "watabe951@gmail.com"},
+]
+dependencies = [
+    "opencv-python~=4.5",
+    "PyAutoGUI~=0.9",
+    "PyAudio @ https://download.lfd.uci.edu/pythonlibs/x6hvwk7i/PyAudio-0.2.11-cp39-cp39-win_amd64.whl",
+    "wheel~=0.37",
+    "mediapipe~=0.8",
+]
+requires-python = ">=3.9"
+dynamic = ["classifiers"]
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pyreadline3~=3.3",
+]
